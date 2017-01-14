@@ -1,0 +1,60 @@
+/* settings for tags */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  color:black;
+  background-color:black;
+  background-image:url(sans.jpg);
+  background-position:center center;
+  background-repeat:no-repeat;
+  margin-bottom: 60px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+header {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #222;
+  border-top: 1px solid;
+  border-color: #d35400; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #222;
+  border-top: 1px solid;
+  border-color: #d35400; }
+
+h1 {
+  color: #d35400;
+  border-color: #d35400;
+  font-size: 4em;
+  margin-bottom: 1em; }
+
+/*.btn {
+  background-color: #444444;
+  color: #d35400;
+  border-color: #d35400;
+  border: 1px solid; }
+  .btn:hover {
+    background-color: #444444;
+    border-color: #d35400; 
+    color: #d35400; }
+    */
+
+.col-xs-6 {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.text {
+  color: #d35400; }
+  .text a {
+    color: #d35400;
+    text-decoration: underline; }
