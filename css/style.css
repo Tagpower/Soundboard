@@ -26,13 +26,14 @@ footer {
   bottom: 0;
   height: 60px;
   width: 100%;
+  color: #ddd;
   background-color: #222;
   border-top: 1px solid;
-  border-color: #d35400; }
+  border-color: #0054d3; }
 
 h1 {
-  color: #d35400;
-  border-color: #d35400;
+  color: #ddd;
+  border-color: #0054d3;
   font-size: 4em;
   margin-bottom: 1em; }
 
@@ -48,9 +49,9 @@ h1 {
     */
 
 .col-xs-6 {
-  margin-bottom: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .text {
