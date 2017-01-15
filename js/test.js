@@ -47,7 +47,7 @@ function stopSounds() {
 }
 
 //WIP
-/*
+
 for (var name in soundlist) {
     // Create the button...
     btn = document.createElement("button");
@@ -60,4 +60,3 @@ for (var name in soundlist) {
     // Add the button to the body.
     document.body.appendChild(btn);
 };
-/*
