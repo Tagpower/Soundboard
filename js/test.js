@@ -1,8 +1,19 @@
-var nameArray= [
-        "YO",
-        "YOO",
-        "YOOO",
-    ];
+var soundlist = new Map();
+soundlist.set("Asgowned","Asgowned");
+soundlist.set("NASTY","NASTY");
+soundlist.set("NO","NO NO no no");
+soundlist.set("WALUIGI","WALUIGI");
+soundlist.set("sans-ation","Sans-ation");
+soundlist.set("PAIN","*PAIN*");
+soundlist.set("TOO BAD","TOO BAD");
+soundlist.set("Leave","Leave my friends alone");
+soundlist.set("slap","*slap*");
+soundlist.set("child1","WHO'S TOUCHIN DA CHILD");
+soundlist.set("child2","DON TUCH DA CHILD");
+soundlist.set("arguing","*arguing that you should not touch the child*");
+soundlist.set("NUU","NUU");
+soundlist.set("arguing2","*more arguing*");
+
 
 // Define variables first, at the top of the function.
 var audio = document.createElement("audio");
@@ -13,21 +24,22 @@ var btn;
 // Define the button's click event here.    
 var clickButton = function(e) {
     // 'this' relates to the clicked button.
-    var index = this.getAttribute("data-i");
+    var index = this.getAttribute("sound");
     // Set the audio's src attribute to the correct URL.
-    audio.src = baseurl + index + ".wav";
+    audio.src = baseurl + index + ".ogg";
     audio.play();
 }
     
-for (i=0; i < nameArray.length; i++) {
+for (var name in soundlist) {
     // Create the button...
     btn = document.createElement("button");
+    console.log(name);
     // Store the index on the button itself...
-    btn.setAttribute("data-i", i);
+    btn.setAttribute("sound", name);
     // Set the click callback to the clickButton function.
     btn.addEventListener("click", clickButton);
     // Set the text to that of the array.
-    btn.textContent = nameArray[i];
+    btn.textContent = soundlist.get(name);
     // Add the button to the body.
     document.body.appendChild(btn);
 };

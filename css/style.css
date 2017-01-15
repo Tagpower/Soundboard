@@ -35,6 +35,11 @@ h1 {
   color: #ddd;
   border-color: #0054d3;
   font-size: 4em;
+  margin-bottom: 0.5em; }
+
+h4 {
+  color: #ddd;
+  font-size: 1em;
   margin-bottom: 1em; }
 
 /*.btn {
@@ -49,9 +54,9 @@ h1 {
     */
 
 .col-xs-6 {
-  margin-bottom: 3em;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .text {
