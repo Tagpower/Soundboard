@@ -29,11 +29,28 @@ var clickButton = function(e) {
     audio.src = baseurl + index + ".ogg";
     audio.play();
 }
-    
+
+window.addEventListener("keyup", dealWithKeyboard, false);
+
+function dealWithKeyboard(e) {
+    if (e.keyCode == "83") {
+        stopSounds();
+    }
+}
+
+function stopSounds() {
+    var sounds = document.getElementsByTagName('audio');
+    for(i=0; i<sounds.length; i++) {
+        sounds[i].pause();
+        sounds[i].currentTime = 0;
+    }
+}
+
+//WIP
+/*
 for (var name in soundlist) {
     // Create the button...
     btn = document.createElement("button");
-    console.log(name);
     // Store the index on the button itself...
     btn.setAttribute("sound", name);
     // Set the click callback to the clickButton function.
@@ -43,3 +60,4 @@ for (var name in soundlist) {
     // Add the button to the body.
     document.body.appendChild(btn);
 };
+/*
